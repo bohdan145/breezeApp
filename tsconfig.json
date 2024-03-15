@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "target": "ES2021",
+    "outDir": "./dist",
+    "types": ["node"],
+    "noEmit": false,
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "sourceMap": true,
+    "lib": ["ES2021"],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths" : {
+      "@app/*": ["src/*/index", "src/*"]
+    },
+  },
+  "include": ["app.expo.js", "src"],
+  "exclude": ["node_modules"],
+  "extends": "expo/tsconfig.base"
+}
